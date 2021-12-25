@@ -94,11 +94,25 @@ form{
     margin-top: 20px;
 }
 /* Media */
-@media screen and (max-width:460px) {
+@media screen and (max-width:560px) {
     .container{
         min-width: 90%;
     }
     .head{
-        font-size: 2rem;
+        font-size: 2.5rem;
+    }
+    .defination{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:390px) {
+    .search input{
+        width: 60%;
+    }
+    .head{
+        word-wrap: break-word;
+    }
+    #audioSrc{
+        width: 60%;
     }
 }
