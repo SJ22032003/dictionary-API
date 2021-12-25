@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:auto;
+
+    background: linear-gradient(90deg, rgba(240,240,240,1) 0%, rgba(233,233,233,1) 48%, rgba(228,236,237,1) 100%); 
+}
+.container{
+    margin: 20px;
+}
+.searchRes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+form{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Search & Result ------------*/
+
+.search input {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black; 
+    padding: 15px 20px;
+    font-size: 25px;
+    background-color: transparent;
+}
+
+
+.search button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 10px 15px;
+    margin: 10px;
+}
+.search button:active{
+    transform: translateY(2px)
+}
+/* Results-------- */
+
+.result{
+    height: fit-content;   
+    width: 100%;
+    margin: 30px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 14px 14px 0px -4px grey;
+}
+.res{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    max-width: 500px;
+}
+.head{
+    font-size: 3.5rem;
+    font-family: 'Work Sans', sans-serif;
+    border-left: 3px solid black;
+    padding-left:10px ;
+}
+.defination{
+    font-family: 'Mulish', sans-serif;
+    font-size: 25px;
+    word-wrap: normal;
+}
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(206, 206, 206, 0.8);
+}
+.loader img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+#audio{
+    align-self: center;
+    margin-top: 20px;
+}
+/* Media */
+@media screen and (max-width:460px) {
+    .container{
+        min-width: 90%;
+    }
+    .head{
+        font-size: 2rem;
+    }
+}

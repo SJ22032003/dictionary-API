@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Dictionary</title>
+  </head>
+  <body>
+      <div id="loader" class="loader" hidden><img src="assets/loader/loading.svg" alt="loading" srcset=""></div>
+    <div id="container" class="container">
+      <div id="searchRes" class="searchRes">
+        <div id="search" class="search">
+          <form>
+            <input type="search" placeholder="search..." spellcheck="true" id="inputValue" />
+            <button type="submit" id="button">
+              <img
+                src="https://img.icons8.com/material-outlined/24/000000/search--v2.png"
+              />
+            </button>
+          </form>
+        </div>
+        <div id="result" class="result_1">
+            <div class="res">
+                <h1 id="head" class="head"></h1>
+                <p id="defination" class="defination"></p>
+                <div id="audio" hidden>
+                    <audio id="audioSrc"
+                        controls
+                        >
+                        Your browser does not support the
+                    </audio>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4c9e9d4b2b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
