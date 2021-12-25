@@ -10,6 +10,20 @@ body{
 
     background: linear-gradient(90deg, rgba(240,240,240,1) 0%, rgba(233,233,233,1) 48%, rgba(228,236,237,1) 100%); 
 }
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(206, 206, 206, 0.8);
+}
+.loader img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
 .container{
     margin: 20px;
 }
@@ -82,20 +96,7 @@ form{
     border-left: 2px solid rgb(49, 48, 48);
     padding-left: 10px;
 }
-.loader{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(206, 206, 206, 0.8);
-}
-.loader img{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%,-50%);
-}
+
 #audio{
     align-self: center;
     margin-top: 20px;
