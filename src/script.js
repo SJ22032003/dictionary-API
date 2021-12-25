@@ -32,6 +32,7 @@ function handleSearch(event) {
   event.preventDefault();
   let value = inputValue.value.trim('');
   if (!value) {
+    loader.hidden = true;
     return;
   }
 
