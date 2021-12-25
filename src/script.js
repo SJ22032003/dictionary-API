@@ -6,6 +6,7 @@ const result = document.getElementById("result");
 let head = document.getElementById("head");
 let definition = document.getElementById('defination');
 const audio = document.getElementById('audio');
+let example = document.getElementById('example');
 let audioSrc = document.getElementById('audioSrc');
 
 const loader = document.getElementById('loader');
@@ -21,6 +22,7 @@ function outputResult() {
   result.classList.add("animate__animated", "animate__fadeInUp");
   head.innerText = `${dictArry[0].word}`;
   definition.innerText = `${dictArry[0].meanings[0].definitions[0].definition}`;
+  example.innerText =  `${dictArry[0].meanings[0].definitions[0].example}`
   audioSrc.setAttribute('src',`${dictArry[0].phonetics[0].audio}`);
   audio.hidden = false;
 }

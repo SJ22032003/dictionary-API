@@ -74,7 +74,14 @@ form{
     font-size: 25px;
     word-wrap: normal;
 }
-
+.example{
+    font-size: 20px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    border-left: 2px solid rgb(49, 48, 48);
+    padding-left: 10px;
+}
 .loader{
     position: fixed;
     top: 0;
